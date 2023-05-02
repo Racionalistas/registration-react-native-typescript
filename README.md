@@ -1,8 +1,8 @@
-Деплой: https://precious-dango-dd636f.netlify.app
-Задание: https://docs.google.com/document/d/1OlHt1Vxjdip3t6QwKkq6EXdCMNS6-29v865vngcN7Zw/edit
-## Регистрация пользователя посредством заполнения информации с нескольких страниц
+## Деплой: https://precious-dango-dd636f.netlify.app
+## Задание: https://docs.google.com/document/d/1OlHt1Vxjdip3t6QwKkq6EXdCMNS6-29v865vngcN7Zw/edit
+# Регистрация пользователя посредством заполнения информации с нескольких страниц
 
-# Что реализовано в проекте:
+## Что реализовано в проекте:
 0. Регистрация пользователя посредством заполнения информации с нескольких страниц
 1. При переходе “Назад” введённые данные сохраняются и автоматически подставляются
 2. Проверка на корректность ввода электронной почты
@@ -11,4 +11,4 @@
 5. Redux
 6. Radio button, checkbox, toggle switch
 
-# Использован React Native Typescript
+## Использован React Native Typescript
