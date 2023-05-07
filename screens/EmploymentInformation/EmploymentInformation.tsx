@@ -42,11 +42,11 @@ const EmploymentInformation = () => {
                 onValueChange={(value: string) => setSelectedOption(value)}
                 value={selectedOption}
             >
-                <View style={optionBlockStyles.container}>
+                <View style={optionBlockStyles.optionContainer}>
                     <RadioButton value='option1' />
                     <Text style={[commonStyles.text, optionBlockStyles.optionDescription]}>На себя, я частный специалист</Text>
                 </View>
-                <View style={optionBlockStyles.container}>
+                <View style={optionBlockStyles.optionContainer}>
                     <RadioButton value='option2' />
                     <Text style={[commonStyles.text, optionBlockStyles.optionDescription]}>Я ИП или представитель компании</Text>
                 </View>
