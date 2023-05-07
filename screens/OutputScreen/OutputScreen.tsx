@@ -19,15 +19,16 @@ const PersonNameInformation: React.FC<Props> = ({ navigation }) => {
             <TextComponent>Email: {formData.email}</TextComponent>
             <TextComponent>Телефон: +7{formData.phone}</TextComponent>
 
-            <TextComponent>Тип занятости: {formData.employmentType === 'private_specialist' ? 'Частный специалист' : 'ИП или Представитель Компании'}</TextComponent>
             {formData.employmentType === 'private_specialist' ?
                 (<>
+                    <TextComponent>Тип занятости: Частный специалист</TextComponent>
                     {formData.firstName && (<TextComponent>Имя: {formData.firstName}</TextComponent>)}
                     {formData.lastName && (<TextComponent>Фамилия: {formData.lastName}</TextComponent>)}
                     {formData.middleName && (<TextComponent>Отчество: {formData.middleName}</TextComponent>)}
                 </>)
                 :
                 (<>
+                    <TextComponent>Тип занятости: ИП или Представитель Компании</TextComponent>
                     {formData.companyName && (<TextComponent>Название компании: {formData.companyName}</TextComponent>)}
                     {formData.officialName && (<TextComponent>Имя ответственного лица: {formData.officialName}</TextComponent>)}
                 </>)
