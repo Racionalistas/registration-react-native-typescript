@@ -21,17 +21,19 @@ const WorkAreaInformation: React.FC<Props> = ({ navigation }) => {
         <View style={commonStyles.container}>
             <TitleComponent>Где вы оказываете услуги?</TitleComponent>
 
-            <View style={optionBlockStyles.container}>
-                <TextComponent>Работаю удалённо</TextComponent>
-                <ToggleSwitch handleOptionSelect={(value: string, selectedValue: boolean) => handleOptionSelect(value, selectedValue, formData, dispatch)} optionKey="workTypeRemote" optionValue={formData.workTypeRemote} />
-            </View>
-            <View style={optionBlockStyles.container}>
-                <TextComponent>Принимаю у себя</TextComponent>
-                <ToggleSwitch handleOptionSelect={(value: string, selectedValue: boolean) => handleOptionSelect(value, selectedValue, formData, dispatch)} optionKey="workTypeAtHome" optionValue={formData.workTypeAtHome} />
-            </View>
-            <View style={optionBlockStyles.container}>
-                <TextComponent>Выезжаю к клиентам</TextComponent>
-                <ToggleSwitch handleOptionSelect={(value: string, selectedValue: boolean) => handleOptionSelect(value, selectedValue, formData, dispatch)} optionKey="workTypeClient" optionValue={formData.workTypeClient} />
+            <View style={optionBlockStyles.wrapper}>
+                <View style={optionBlockStyles.optionContainer}>
+                    <TextComponent>Работаю удалённо</TextComponent>
+                    <ToggleSwitch handleOptionSelect={(value: string, selectedValue: boolean) => handleOptionSelect(value, selectedValue, formData, dispatch)} optionKey="workTypeRemote" optionValue={formData.workTypeRemote} />
+                </View>
+                <View style={optionBlockStyles.optionContainer}>
+                    <TextComponent>Принимаю у себя</TextComponent>
+                    <ToggleSwitch handleOptionSelect={(value: string, selectedValue: boolean) => handleOptionSelect(value, selectedValue, formData, dispatch)} optionKey="workTypeAtHome" optionValue={formData.workTypeAtHome} />
+                </View>
+                <View style={optionBlockStyles.optionContainer}>
+                    <TextComponent>Выезжаю к клиентам</TextComponent>
+                    <ToggleSwitch handleOptionSelect={(value: string, selectedValue: boolean) => handleOptionSelect(value, selectedValue, formData, dispatch)} optionKey="workTypeClient" optionValue={formData.workTypeClient} />
+                </View>
             </View>
             {formData.workTypeClient && (
                 <View>
